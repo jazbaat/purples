@@ -1,0 +1,1001 @@
+.header {
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 95% 61%, 29% 89%, 10% 89%, 0 78%, 0% 20%);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("headerB.jpg");
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(92, 6, 126, 0.8);
+}
+
+#navbar {
+    color: white;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#navbar a {
+    margin: 3%;
+    color: white;
+}
+
+#temp {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    margin: 3%;
+    font-family: 'Merienda One', cursive;
+    border-radius: 100px;
+}
+
+#temp:before {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: -1;
+    content: 'Templates';
+    transform-origin: left bottom;
+    transition: transform 1s;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temp:hover:before {
+    transform: rotate(0deg);
+}
+
+#temp:hover {
+    color: transparent;
+}
+
+#home {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    margin: 3%;
+    font-family: 'Merienda One', cursive;
+    border-radius: 100px;
+}
+
+#home:before {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: -1;
+    content: 'Home';
+    transform-origin: left bottom;
+    transition: transform 1s;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home:hover:before {
+    transform: rotate(0deg);
+}
+
+#home:hover {
+    color: transparent;
+}
+
+#about {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    margin: 3%;
+    font-family: 'Merienda One', cursive;
+    border-radius: 100px;
+}
+
+#about:before {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: -1;
+    content: 'about';
+    transform-origin: left bottom;
+    transition: transform 1s;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about:hover:before {
+    transform: rotate(0deg);
+}
+
+#about:hover {
+    color: transparent;
+}
+
+#tech {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    margin: 3%;
+    font-family: 'Merienda One', cursive;
+    border-radius: 100px;
+}
+
+#tech:before {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: -1;
+    content: 'technology';
+    transform-origin: left bottom;
+    transition: transform 1s;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tech:hover:before {
+    transform: rotate(0deg);
+}
+
+#tech:hover {
+    color: transparent;
+}
+
+#brand {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    margin: 3%;
+    font-family: 'Merienda One', cursive;
+    border-radius: 100px;
+}
+
+#brand:before {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: -1;
+    content: 'No. 1 Choice';
+    transform-origin: left bottom;
+    transition: transform 1s;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#brand:hover:before {
+    transform: rotate(0deg);
+}
+
+#brand:hover {
+    color: transparent;
+}
+
+
+/*
+1ST PART
+navbar and Icons completed
+
+
+
+Thanks GOD
+*/
+
+.over {
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.item1 h3 {
+    color: white;
+}
+
+.item1 p {
+    color: white;
+}
+
+#dot1 {
+    animation: dot 0.6s linear infinite;
+}
+
+@keyframes dot {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-6%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#dot2 {
+    animation: dot2 0.9s linear infinite;
+    transition: all 1s;
+}
+
+@keyframes dot2 {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-6%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#dot3 {
+    animation: dot3 0.7s linear infinite;
+    transition: all 1s;
+}
+
+@keyframes dot3 {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-6%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#solob {
+    border-radius: 100px;
+    width: 45%;
+    font-family: calibri;
+}
+
+
+/*2nd part*/
+
+
+/*2nd part*/
+
+
+/*2nd part*/
+
+
+/*2nd part*/
+
+
+/*2nd part*/
+
+
+/*2nd part*/
+
+@media all and (max-width:996px) {
+    #navbar a {
+        color: rgba(92, 6, 126, 0.8);
+        background-color: white;
+    }
+    #navbar {
+        background-color: white;
+    }
+}
+
+@media all and (max-width:786px) {
+    #navbar a {
+        color: rgba(92, 6, 126, 0.8);
+        background-color: white;
+    }
+    #navbar {
+        background-color: white;
+    }
+    .over {
+        margin-top: 30%;
+        display: inline-block;
+    }
+    .item1 h3 {
+        color: white;
+        margin-left: 2%;
+        margin-right: 30%;
+        margin-top: 3%;
+    }
+    .item1 p {
+        color: white;
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+    .header {
+        clip-path: polygon(0 0, 100% 0, 100% 20%, 95% 61%, 29% 89%, 10% 89%, 0 78%, 0% 20%);
+        width: 100%;
+        height: 150vh;
+        position: relative;
+        background-image: url("headerB.jpg");
+    }
+    .svg {
+        width: 220px;
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+    #solob {
+        width: 30%;
+        margin-left: 7%;
+    }
+}
+
+@media all and (max-width:600px) {
+    #navbar a {
+        color: rgba(92, 6, 126, 0.8);
+        background-color: white;
+    }
+    #navbar {
+        background-color: white;
+    }
+    .over {
+        margin-top: 20%;
+        display: inline-block;
+    }
+    .item1 h3 {
+        color: white;
+        margin-left: 10%;
+        margin-right: 30%;
+        margin-top: 3%;
+    }
+    .item1 p {
+        color: white;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .header {
+        clip-path: polygon(0 0, 100% 0, 100% 20%, 95% 61%, 29% 89%, 10% 89%, 0 78%, 0% 20%);
+        width: 100%;
+        height: 140vh;
+        position: relative;
+        background-image: url("headerB.jpg");
+    }
+    .svg {
+        width: 230px;
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+    #solob {
+        width: 22%;
+        margin-left: 10%;
+    }
+}
+
+@media all and (max-width:480px) {
+    #navbar a {
+        color: rgba(92, 6, 126, 0.8);
+        background-color: white;
+    }
+    #navbar {
+        background-color: white;
+    }
+    .over {
+        margin-top: 20%;
+        display: inline-block;
+    }
+    .item1 h3 {
+        color: white;
+        font-size: 19px;
+        margin-left: 10%;
+        margin-right: 30%;
+        margin-top: 4%;
+    }
+    .item1 p {
+        color: white;
+        font-size: 15px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .header {
+        clip-path: polygon(0 0, 100% 0, 100% 20%, 95% 61%, 29% 89%, 10% 89%, 0 78%, 0% 20%);
+        width: 100%;
+        height: 130vh;
+        position: relative;
+        background-image: url("headerB.jpg");
+    }
+    .svg {
+        width: 220px;
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+    #solob {
+        width: 30%;
+        margin-left: 10%;
+    }
+}
+
+@media all and (max-width:414px) {
+    #navbar a {
+        color: rgba(92, 6, 126, 0.8);
+        background-color: white;
+    }
+    #navbar {
+        background-color: white;
+    }
+    .over {
+        margin-top: 20%;
+        display: inline-block;
+    }
+    .item1 h3 {
+        color: white;
+        font-size: 24px;
+        margin-left: 10%;
+        margin-right: 20%;
+        margin-top: 6%;
+    }
+    .item1 p {
+        color: white;
+        font-size: 15px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .header {
+        clip-path: polygon(0 0, 100% 0, 100% 20%, 95% 61%, 29% 89%, 10% 89%, 0 78%, 0% 20%);
+        width: 100%;
+        height: 110vh;
+        position: relative;
+        background-image: url("headerB.jpg");
+    }
+    .svg {
+        width: 220px;
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+    #solob {
+        width: 30%;
+        margin-left: 10%;
+    }
+}
+
+@media all and (max-width:350px) {
+    #navbar a {
+        color: rgba(92, 6, 126, 0.8);
+        background-color: white;
+    }
+    #navbar {
+        background-color: white;
+    }
+    .over {
+        margin-top: 30%;
+        display: inline-block;
+    }
+    .item1 h3 {
+        color: white;
+        font-size: 19px;
+        margin-left: 10%;
+        margin-right: 20%;
+        margin-top: 4%;
+    }
+    .item1 p {
+        color: white;
+        font-size: 15px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .header {
+        clip-path: polygon(0 0, 100% 0, 100% 20%, 95% 61%, 29% 89%, 10% 89%, 0 78%, 0% 20%);
+        width: 100%;
+        height: 140vh;
+        position: relative;
+        background-image: url("headerB.jpg");
+    }
+    .svg {
+        width: 220px;
+        margin-left: 30%;
+        margin-top: 1%;
+    }
+    #solob {
+        width: 40%;
+        margin-left: 10%;
+    }
+}
+
+hr {
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    color: purple;
+    background-color: purple;
+}
+
+.tech {
+    width: 100%;
+    margin-top: 10%;
+    height: 300px;
+    background-image: url("techB1.jpg");
+    background-position: cover;
+    position: relative;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 6, 126, 0.8);
+}
+
+.use {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.use .k1 h1 {
+    font-family: 'RocknRoll One', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    font-size: 30px;
+    color: white;
+    ;
+}
+
+.use .k1 p {
+    font-family: 'RocknRoll One', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-size: 14px;
+    color: white;
+    ;
+}
+
+#Tbtn {
+    margin-left: 25%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color: transparent;
+    width: 50%;
+}
+
+#Tbtn:hover {
+    transition: 0.6s ease-in-out;
+    margin-left: 25%;
+    border-radius: 10px;
+    background-color: rgb(116, 35, 80);
+    color: rgb(255, 255, 255);
+}
+
+.images1 img {
+    width: 50px;
+    margin-left: 3%;
+}
+
+.images2 img {
+    width: 50px;
+    margin-left: 7%;
+}
+
+.k2 .images1 {
+    margin-left: 30%;
+    margin-top: 25%;
+}
+
+.k2 .images2 {
+    margin-left: 30%;
+}
+
+.images1 img {
+    animation: anima1 2s linear infinite;
+}
+
+@keyframes anima1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.images1 img:nth-child(1) {
+    animation: anima1 1s linear infinite;
+}
+
+.images1 img:nth-child(2) {
+    animation: anima1 0.8s linear infinite;
+}
+
+.images1 img:nth-child(3) {
+    animation: anima1 1.4s linear infinite;
+}
+
+.images1 img:nth-child(4) {
+    animation: anima1 1.1s linear infinite;
+}
+
+.images1 img:nth-child(5) {
+    animation: anima1 0.4s linear infinite;
+}
+
+@keyframes anima2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.images2 img:nth-child(1) {
+    animation: anima2 1s linear infinite;
+}
+
+.images2 img:nth-child(2) {
+    animation: anima1 0.8s linear infinite;
+}
+
+.images2 img:nth-child(3) {
+    animation: anima1 1.4s linear infinite;
+}
+
+@media all and (max-width:778px) {
+    .use {
+        display: block;
+    }
+    .tech {
+        width: 100%;
+        height: 400px;
+        background-image: url("techB.jpg");
+        background-position: cover;
+        position: relative;
+    }
+    .use .k1 h1 {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        font-size: 30px;
+        color: white;
+        ;
+    }
+    .use .k1 p {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 14px;
+        color: white;
+        ;
+    }
+    #Tbtn {
+        margin-left: 30%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-color: transparent;
+        width: 40%;
+    }
+    #Tbtn:hover {
+        transition: 0.6s ease-in-out;
+        margin-left: 25%;
+        border-radius: 10px;
+        background-color: rgb(116, 35, 80);
+        color: rgb(255, 255, 255);
+    }
+    .images1 img {
+        width: 50px;
+        margin-left: 3%;
+    }
+    .images2 img {
+        width: 50px;
+        margin-left: 7%;
+    }
+    .k2 .images1 {
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+    .k2 .images2 {
+        margin-left: 30%;
+    }
+}
+
+@media all and (max-width:680px) {
+    .use {
+        display: block;
+    }
+    .tech {
+        width: 100%;
+        height: 400px;
+        background-image: url("techB.jpg");
+        background-position: cover;
+        position: relative;
+    }
+    .use .k1 h1 {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        font-size: 30px;
+        color: white;
+        ;
+    }
+    .use .k1 p {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 14px;
+        color: white;
+        ;
+    }
+    #Tbtn {
+        margin-left: 30%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-color: transparent;
+        width: 40%;
+    }
+    #Tbtn:hover {
+        transition: 0.6s ease-in-out;
+        margin-left: 25%;
+        border-radius: 10px;
+        background-color: rgb(116, 35, 80);
+        color: rgb(255, 255, 255);
+    }
+    .images1 img {
+        width: 50px;
+        margin-left: 4%;
+    }
+    .images2 img {
+        width: 50px;
+        margin-left: 8%;
+    }
+    .k2 .images1 {
+        margin-left: 25%;
+        margin-top: 6%;
+    }
+    .k2 .images2 {
+        margin-left: 25%;
+    }
+}
+
+@media all and (max-width:518px) {
+    .use {
+        display: block;
+    }
+    .tech {
+        width: 100%;
+        height: 400px;
+        background-image: url("techB.jpg");
+        background-position: cover;
+        position: relative;
+    }
+    .use .k1 h1 {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        font-size: 30px;
+        color: white;
+        ;
+    }
+    .use .k1 p {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 14px;
+        color: white;
+        ;
+    }
+    #Tbtn {
+        margin-left: 30%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-color: transparent;
+        width: 40%;
+    }
+    #Tbtn:hover {
+        transition: 0.6s ease-in-out;
+        margin-left: 25%;
+        border-radius: 10px;
+        background-color: rgb(116, 35, 80);
+        color: rgb(255, 255, 255);
+    }
+    .images1 img {
+        width: 50px;
+        margin-left: 3%;
+    }
+    .images2 img {
+        width: 50px;
+        margin-left: 7%;
+    }
+    .k2 .images1 {
+        margin-left: 24%;
+        margin-top: 8%;
+    }
+    .k2 .images2 {
+        margin-left: 24%;
+    }
+}
+
+@media all and (max-width:438px) {
+    .use {
+        display: block;
+    }
+    .tech {
+        width: 100%;
+        height: 400px;
+        background-image: url("techB.jpg");
+        background-position: cover;
+        position: relative;
+    }
+    .use .k1 h1 {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        font-size: 30px;
+        color: white;
+        ;
+    }
+    .use .k1 p {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 14px;
+        color: white;
+        ;
+    }
+    #Tbtn {
+        margin-left: 25%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-color: transparent;
+        width: 50%;
+    }
+    #Tbtn:hover {
+        transition: 0.6s ease-in-out;
+        margin-left: 25%;
+        border-radius: 10px;
+        background-color: rgb(116, 35, 80);
+        color: rgb(255, 255, 255);
+    }
+    .images1 img {
+        width: 40px;
+        margin-left: 5%;
+    }
+    .images2 img {
+        width: 50px;
+        margin-left: 8%;
+    }
+    .k2 .images1 {
+        margin-left: 20%;
+        margin-top: 14%;
+    }
+    .k2 .images2 {
+        margin-left: 20%;
+    }
+}
+
+@media all and (max-width:350px) {
+    .use {
+        display: block;
+    }
+    .tech {
+        width: 100%;
+        height: 400px;
+        background-image: url("techB.jpg");
+        background-position: cover;
+        position: relative;
+    }
+    .use .k1 h1 {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+        font-size: 20px;
+        color: white;
+        ;
+    }
+    .use .k1 p {
+        font-family: 'RocknRoll One', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 11px;
+        color: white;
+        ;
+    }
+    #Tbtn {
+        margin-left: 25%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-color: transparent;
+        width: 50%;
+    }
+    #Tbtn:hover {
+        transition: 0.6s ease-in-out;
+        margin-left: 25%;
+        border-radius: 10px;
+        background-color: rgb(116, 35, 80);
+        color: rgb(255, 255, 255);
+    }
+    .images1 img {
+        width: 35px;
+        margin-left: 3%;
+    }
+    .images2 img {
+        width: 35px;
+        margin-left: 7%;
+    }
+    .k2 .images1 {
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    .k2 .images2 {
+        margin-left: 20%;
+    }
+}
